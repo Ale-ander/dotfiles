@@ -1,0 +1,41 @@
+window { 
+    background-color: #121210;
+    color: #E3E4E4;
+    opacity: 0.8;
+    font-family: "JetBrains Mono";
+}
+entry
+entry:focus{
+    background-color: #121210; /* Colore sfondo scuro */
+    color: #E3E4E4;            /* Colore del testo */
+    border-radius: 8px;        /* Angoli arrotondati */
+    padding: 10px;             /* Spazio interno al testo */
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+}
+
+/* Stile base per tutti i bottoni */
+button {
+    background-image: none;    /* Rimuove gradienti GTK predefiniti */
+    background-color: #121210;
+    color: #E3E4E4;
+    border-radius: 15px;
+    border: 2px solid #717679;
+    padding: 5px 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Quando passi il mouse sopra */
+button:hover {
+    background-color: #717679;
+    color: #121210;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Effetto ombra */
+}
+
+/* Quando clicchi il bottone */
+button:active {
+    background-color: #CA8A10;
+    color: #121210;
+    border: 2px solid transparent;
+}
