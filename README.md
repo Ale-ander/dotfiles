@@ -13,7 +13,6 @@ Cachy-OS (April 2026)
 - notification daemon: **swaync**		
 - wallpaper manager: **awww**
 - screensaver: **waylock**
-- display manager: **autorandr???**
 - multimedia framework: **pipewire** / **wireplumber**
 - network: **nm-applet???**
 - bluetooth: **bluethootctl**
@@ -44,4 +43,4 @@ Cachy-OS (April 2026)
 ### Keys combo
 
 - run
-    ```hypr\scripts\KeyHints.sh```
+    ```hypr\scripts\KeyHints.sh``` or ```Win+H```

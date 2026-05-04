@@ -22,10 +22,9 @@ privateinternetaccess
 pulse
 qalculate
 qt5ct
-qt6ct/*.conf
+qt6ct/colors/*.conf
 QtProject.conf
 quickshell
-rofi/*.rasi
 rofi/.current_wallpaper
 rofi/wallust/*.rasi
 session
@@ -35,6 +34,7 @@ systemd
 trashrc
 waybar/wallust/*.css
 wlogout/style.css
+wlogout/assets
 yad/*.css
 
 *.tar
