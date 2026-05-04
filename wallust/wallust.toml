@@ -47,7 +47,7 @@ waybar.template = 'colors-waybar.css'
 waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
 
 kitty.template = 'colors-kitty.conf'
-kitty.target = '~/.config/kitty/kitty-themes/01-Wallust.conf'
+kitty.target = '~/.config/kitty/kitty-themes/wallust.conf'
 
 ghostty.template = 'colors-ghostty.conf'
 ghostty.target = '~/.config/ghostty/wallust.conf'
