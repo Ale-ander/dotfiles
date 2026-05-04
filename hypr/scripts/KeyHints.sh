@@ -32,7 +32,7 @@ GDK_BACKEND=$BACKEND yad \
 " SHIFT Enter" "DropDown Terminal" " Q to close" \
 " B" "Launch Browser" "firefox" \
 " D" "Application Launcher" "rofi" \
-" E" "Open File Manager" "dolphin" \
+" E" "Open File Manager" "pcmanfm-qt" \
 " S" "Google Search using rofi" "rofi" \
 " Q" "Close active window" "not kill" \
 " SHIFT Q " "Kills an active window" "kill" \

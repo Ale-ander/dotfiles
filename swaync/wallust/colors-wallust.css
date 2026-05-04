@@ -1,12 +1,12 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  
  /* wallust template - colors-swaync */
 
-@define-color text #E3E4E4;
-@define-color background rgba(18,18,16,0.25);
-@define-color background-alt #121210;
-@define-color cursor #A49A97;
-@define-color hovered #CA8A10;
-@define-color button-background #AFB1B2;
-@define-color button-active #665149;
-@define-color border #414132;
-@define-color urgent #CFCFD0;
+@define-color text #F7E7E9;
+@define-color background rgba(16,16,18,0.25);
+@define-color background-alt #101012;
+@define-color cursor #ADA8B8;
+@define-color hovered #B699B0;
+@define-color button-background #E7BAC0;
+@define-color button-active #636987;
+@define-color border #7D5B6D;
+@define-color urgent #EBD4D7;

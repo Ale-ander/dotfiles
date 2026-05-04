@@ -55,9 +55,6 @@ ghostty.target = '~/.config/ghostty/wallust.conf'
 quickshell.template = 'qml_color.json'
 quickshell.target = '~/.config/quickshell/qml_color.json'
 
-kvantum.template = 'colors-kvantum.kconfig'
-kvantum.target = '~/.config/Kvantum/catppuccin-mocha-blue/catppuccin-mocha-blue.kvconfig'
-
 qt6ct.template = "colors-qt6ct.conf"
 qt6ct.target = "~/.config/qt6ct/colors/wallust.conf"
 
@@ -65,7 +62,7 @@ yad.template = "colors-yad.css"
 yad.target = "~/.config/yad/style.css"
 
 btop.template = "colors-btop.theme"
-btop.target = "~/.config/btop/wallust.theme"
+btop.target = "~/.config/btop/themes/wallust.theme"
 
 swaync.template = 'colors-swaync.css'
 swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
