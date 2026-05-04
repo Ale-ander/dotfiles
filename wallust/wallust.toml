@@ -1,6 +1,3 @@
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
-# wallust configuration - for wallust version 3.0
-
 # How the image is parse, in order to get the colors:
 # full - resized - wal - thumb -  fastresize - kmeans
 backend = "resized"
@@ -48,12 +45,6 @@ waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
 
 kitty.template = 'colors-kitty.conf'
 kitty.target = '~/.config/kitty/kitty-themes/wallust.conf'
-
-ghostty.template = 'colors-ghostty.conf'
-ghostty.target = '~/.config/ghostty/wallust.conf'
-
-quickshell.template = 'qml_color.json'
-quickshell.target = '~/.config/quickshell/qml_color.json'
 
 qt6ct.template = "colors-qt6ct.conf"
 qt6ct.target = "~/.config/qt6ct/colors/wallust.conf"

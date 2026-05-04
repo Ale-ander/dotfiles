@@ -1,6 +1,3 @@
-# Wallust generated btop theme
-# Based on Adapta Template
-
 # Main background, empty for terminal default
 theme[main_bg]=""
 
