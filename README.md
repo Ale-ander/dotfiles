@@ -26,7 +26,7 @@ Cachy-OS (April 2026)
 - Terminal: **kitty**
 - Calculator: **Qalculate**
 - Web browser: **firefox**
-- File browsing: **dolphin**
+- File browsing: **pcmanfm-qt**
 - Image viewer: **gwenview**
 - Audio mixer: **pavucontrol**
 - Launcher: **rofi**
