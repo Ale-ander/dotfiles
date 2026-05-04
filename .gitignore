@@ -10,7 +10,7 @@ dconf/*
 ghostty
 gwenviewrc
 hypr-backup*
-hypr/wallpaper-effect
+hypr/wallpaper-effect/*
 hypr/wallust/*.conf
 kitty/kitty-themes/*.conf
 Kvantum/*
