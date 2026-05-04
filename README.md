@@ -14,7 +14,7 @@ Cachy-OS (April 2026)
 - wallpaper manager: **awww**
 - screensaver: **waylock**
 - multimedia framework: **pipewire** / **wireplumber**
-- network: **nm-applet???**
+- network: **nm-applet**
 - bluetooth: **bluethootctl**
 - clipboard manager: **cliphist**
 

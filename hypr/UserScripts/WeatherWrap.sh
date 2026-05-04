@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Weather entrypoint: prefer Python (Open‑Meteo), fallback to legacy Bash (wttr.in)
-
 SCRIPT_DIR="$(dirname "$0")"
 PY_SCRIPT="$SCRIPT_DIR/Weather.py"
 BASH_FALLBACK="$SCRIPT_DIR/Weather.sh"

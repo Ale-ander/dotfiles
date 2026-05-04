@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kitty --title "Aggiornamento di Sistema" --hold sh -c "sudo pacman -Syu"
+kitty --title "System Update" --hold sh -c "sudo pacman -Syu"

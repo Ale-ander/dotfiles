@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
-# Rewritten to use Open-Meteo APIs (worldwide, no API key) for robust weather data.
-# Outputs Waybar-compatible JSON and a simple text cache.
-
 from __future__ import annotations
 
 import json
