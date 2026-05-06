@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Simple bash script to check and will try to update your system
 
 # Local Paths
 iDIR="$HOME/.config/swaync/images"

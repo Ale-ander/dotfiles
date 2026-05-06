@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Clipboard Manager. This script uses cliphist, rofi, and wl-copy.
 
 # Variables
 rofi_theme="$HOME/.config/rofi/config-clipboard.rasi"

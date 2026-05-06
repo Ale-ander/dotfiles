@@ -15,7 +15,7 @@ Cachy-OS (April 2026)
 - screensaver: **waylock**
 - multimedia framework: **pipewire** / **wireplumber**
 - network: **nm-applet**
-- bluetooth: **bluethootctl**
+- bluetooth: **blueman-manager**
 - clipboard manager: **cliphist**
 
 ### Applications
@@ -34,7 +34,7 @@ Cachy-OS (April 2026)
 
 ### SDDM login manager
 
-- config file: ```/etc/lib/sddm/sddm.conf.d```	
+- config file: ```/usr/lib/sddm/sddm.conf.d```	
 
 ### Fonts configuration
 

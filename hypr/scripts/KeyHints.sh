@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-
 # GDK BACKEND. Change to either wayland or x11 if having issues
 BACKEND=wayland
 
@@ -25,38 +22,32 @@ GDK_BACKEND=$BACKEND yad \
     --column=Command: \
     --timeout-indicator=bottom \
 " = " "SUPER KEY (Windows Key Button)" "SUPER KEY" \
-" SHIFT K" "Searchable Keybinds" "Search all Keybinds via rofi" \
-" SHIFT E" "Hyprland Settings Menu" "Shortcut to all configurations" \
+" K" "Searchable Keybinds" "search all Keybinds via rofi" \
 "" "" "" \
-" Enter" "Terminal" "kitty" \
-" SHIFT Enter" "DropDown Terminal" " Q to close" \
+" Enter" "Open terminal" "kitty" \
 " B" "Launch Browser" "firefox" \
 " D" "Application Launcher" "rofi" \
 " E" "Open File Manager" "pcmanfm-qt" \
-" S" "Google Search using rofi" "rofi" \
-" Q" "Close active window" "not kill" \
-" SHIFT Q " "Kills an active window" "kill" \
-" ALT mouse scroll up/down" "Desktop Zoom" "desktop dagnifier" \
-" SHIFT V" "Clipboard Manager" "cliphist" \
-" V" "Toggle float" "doggle float for active window" \
-" W" "Choose wallpaper" "dallpaper denu" \
-" CTRL ALT B" "Hide/UnHide Waybar" "waybar" \
-" CTRL B" "Choose waybar styles" "waybar styles" \
-" ALT B" "Choose waybar layout" "waybar layout" \
-" ALT R" "Reload Waybar swaync Rofi" "reload waybar + reload rofi" \
-" SHIFT N" "Launch Notification Panel" "swaync notification center" \
-" Print" "Save screenshot in ~/Pictures/Screenshots" "grim" \
-" SHIFT S" "screenshot region" "swappy" \
-" P" "Power menu" "wlogout" \
-" L" "Screen lock" "refresh weather + hyprlock" \
-" SHIFT P" "Open PigCat prompt" "🐖" \
-"CTRL ALT Del" "Hyprland Exit" "exit immediately" \
-" SHIFT F" "Fullscreen" "eoggles to full screen" \
-" CTL F" "Almost Fullscreen" "eoggles to full screen with gaps and waybar" \
-" SPACEBAR" "Switch keyboard layout" "switch keyboard layout it  us" \
-" SHIFT A" "Animations Menu" "choose Animations via rofi" \
-" CTRL R" "Rofi Themes Menu" "choose Rofi Themes via rofi" \
-" ALT E" "Rofi Emoticons" "emoticon tab" \
 " H" "Launch this Quick Cheat Sheet" "" \
+" L" "Screen lock" "refresh weather + hyprlock" \
+" P" "Power menu" "wlogout" \
+" Q" "Close active window" "not kill" \
+" V" "Toggle float" "toggle float for active window" \
+" W" "Choose wallpaper" "wallpaper menu" \
+" ALT ARROW KEY" "Swap active window" "" \
+" ALT MOUSE SCROLL" "Zoom in/out" "desktop magnifier" \
+" ALT E" "Rofi Emoticons" "emoticon tab" \
+" ALT R" "Reload Waybar swaync Rofi" "reload waybar + reload rofi" \
+" SHIFT ARROW KEY" "Resize active window" "" \
+" SHIFT F" "Fullscreen" "toggles to full screen" \
+" SHIFT N" "Launch Notification Panel" "swaync notification center" \
+" SHIFT P" "Open PigChat prompt" "🐖" \
+" SHIFT Q " "Kills an active window" "kill" \
+" SHIFT S" "screenshot region" "swappy" \
+" SHIFT V" "Clipboard Manager" "cliphist" \
+" CTRL ARROW KEY" "Move active window" "" \
+" Print" "Save screenshot in ~/Pictures/Screenshots" "grim" \
+" SPACEBAR" "Switch keyboard layout" "switch keyboard layout it  us" \
+"CTRL ALT CANC" "Hyprland Exit" "exit immediately" \
 "" "" "" \
 "ESC" "close this app" "" \

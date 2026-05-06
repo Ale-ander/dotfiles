@@ -9,12 +9,14 @@ cava/*
 dconf/*
 ghostty
 gwenviewrc
-hypr-backup*
 hypr/wallpaper_effects/*
-hypr/wallust/*.conf
+!hypt/wallust/wallpaper_effects/.gitkeep
+hypr/wallust/*
+!hypr/wallust/.gitkeep
 kitty/kitty-themes/*.conf
 Kvantum/*
 micro
+mimeapps.list
 mozilla
 nwg-displays
 pavucontrol.ini

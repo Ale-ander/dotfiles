@@ -134,7 +134,7 @@ apply_image_wallpaper() {
     awww-daemon --format xrgb &
   fi
 
-  awww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
+  awww img "$image_path" $SWWW_PARAMS
 
   # Run additional scripts (pass the image path to avoid cache race conditions)
   "$SCRIPTSDIR/WallustSwww.sh" "$image_path"

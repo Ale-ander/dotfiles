@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# This script is used to play system sounds.
 # Script is used by Volume.Sh and ScreenShots.sh 
 
 theme="freedesktop" # Set the theme for the system sounds.

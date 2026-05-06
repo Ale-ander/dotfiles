@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-# SDDM Wallpaper and Wallust Colors Setter
 
 # for the upcoming changes on the simple_sddm_theme
 
@@ -61,6 +58,7 @@ extract_color() {
 color0=$(extract_color "color1")
 color1=$(extract_color "color0")
 color7=$(extract_color "color14")
+color2=$(extract_color "color2")
 color10=$(extract_color "color10")
 color12=$(extract_color "color12")
 color13=$(extract_color "color13")
@@ -100,6 +98,9 @@ echo 'Enter your password to update SDDM wallpapers and colors';
 sudo sed -i \"s/HeaderTextColor=\\\"#.*\\\"/HeaderTextColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/DateTextColor=\\\"#.*\\\"/DateTextColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/TimeTextColor=\\\"#.*\\\"/TimeTextColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"
+sudo sed -i \"s/FormBackgroundColor=\\\"#.*\\\"/TimeTextColor=\\\"$color2\\\"/\" \"$sddm_theme_conf\"
+sudo sed -i \"s/BackgroundColor=\\\"#.*\\\"/TimeTextColor=\\\"$color2\\\"/\" \"$sddm_theme_conf\"
+sudo sed -i \"s/DimBackgroundColor=\\\"#.*\\\"/TimeTextColor=\\\"$color2\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/DropdownSelectedBackgroundColor=\\\"#.*\\\"/DropdownSelectedBackgroundColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/SystemButtonsIconsColor=\\\"#.*\\\"/SystemButtonsIconsColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/SessionButtonTextColor=\\\"#.*\\\"/SessionButtonTextColor=\\\"$color13\\\"/\" \"$sddm_theme_conf\"

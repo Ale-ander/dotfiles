@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Screenshots scripts
 
 # variables
 time=$(date "+%d-%b_%H-%M-%S")

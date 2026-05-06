@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-
 # Variables
 rofi_theme="$HOME/.config/rofi/config-emoji.rasi"
 msg='** note ** 👀 Click or Return to choose || Ctrl V to Paste'

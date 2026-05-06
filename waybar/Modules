@@ -16,7 +16,7 @@
 	"format-icons": [
 		"󰈸"
 	],
-	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nvtop"
+	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nvtop"
 },
 
 "backlight": {

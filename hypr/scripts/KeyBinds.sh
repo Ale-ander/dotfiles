@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# searchable enabled keybinds using rofi (supports bindd descriptions)
 
 # kill yad to not interfere with this binds
 pkill yad || true
