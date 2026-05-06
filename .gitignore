@@ -32,6 +32,7 @@ quickshell
 rofi/.current_wallpaper
 rofi/wallust/*.rasi
 session
+shelly
 swappy
 swaync/wallust/*.css
 systemd
@@ -41,17 +42,7 @@ wlogout/style.css
 wlogout/assets
 yad/*.css
 
-*.tar
-*.tar.*
-*.jar
-*.exe
-*.msi
-*.deb
-*.zip
-*.tgz
-*.log
-*.log.*
-*.sig
+*.lua
 
 pkg/
 src/

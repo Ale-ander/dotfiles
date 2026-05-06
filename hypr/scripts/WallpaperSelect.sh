@@ -63,17 +63,12 @@ mapfile -d '' PICS < <(find -L "${wallDIR}" -type f \( \
   -iname "*.bmp" -o -iname "*.tiff" -o -iname "*.webp" -o \
   -iname "*.mp4" -o -iname "*.mkv" -o -iname "*.mov" -o -iname "*.webm" \) -print0)
 
-RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
-RANDOM_PIC_NAME=". random"
-
 # Rofi command
 rofi_command="rofi -i -show -dmenu -config $rofi_theme -theme-str $rofi_override"
 
 # Sorting Wallpapers
 menu() {
   IFS=$'\n' sorted_options=($(sort <<<"${PICS[*]}"))
-
-  printf "%s\x00icon\x1f%s\n" "$RANDOM_PIC_NAME" "$RANDOM_PIC"
 
   for pic_path in "${sorted_options[@]}"; do
     pic_name=$(basename "$pic_path")
@@ -166,16 +161,10 @@ main() {
   choice=$(menu | $rofi_command)
   choice=$(echo "$choice" | xargs)
   choosen_wallpaper=$choice
-  RANDOM_PIC_NAME=$(echo "$RANDOM_PIC_NAME" | xargs)
-
+  
   if [[ -z "$choice" ]]; then
     echo "No choice selected. Exiting."
     exit 0
-  fi
-
-  # Handle random selection correctly
-  if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
-    choice=$(basename "$RANDOM_PIC")
   fi
 
   choice_basename=$(basename "$choice" | sed 's/\(.*\)\.[^.]*$/\1/')

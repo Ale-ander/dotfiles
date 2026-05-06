@@ -36,9 +36,9 @@ GDK_BACKEND=$BACKEND yad \
 " W" "Choose wallpaper" "wallpaper menu" \
 " ALT ARROW KEY" "Swap active window" "" \
 " ALT MOUSE SCROLL" "Zoom in/out" "desktop magnifier" \
-" ALT E" "Rofi Emoticons" "emoticon tab" \
 " ALT R" "Reload Waybar swaync Rofi" "reload waybar + reload rofi" \
 " SHIFT ARROW KEY" "Resize active window" "" \
+" SHIFT E" "Rofi Emoticons" "emoticon tab" \
 " SHIFT F" "Fullscreen" "toggles to full screen" \
 " SHIFT N" "Launch Notification Panel" "swaync notification center" \
 " SHIFT P" "Open PigChat prompt" "🐖" \
@@ -46,7 +46,7 @@ GDK_BACKEND=$BACKEND yad \
 " SHIFT S" "screenshot region" "swappy" \
 " SHIFT V" "Clipboard Manager" "cliphist" \
 " CTRL ARROW KEY" "Move active window" "" \
-" Print" "Save screenshot in ~/Pictures/Screenshots" "grim" \
+" Print" "Screenshot of all monitors" "grim" \
 " SPACEBAR" "Switch keyboard layout" "switch keyboard layout it  us" \
 "CTRL ALT CANC" "Hyprland Exit" "exit immediately" \
 "" "" "" \

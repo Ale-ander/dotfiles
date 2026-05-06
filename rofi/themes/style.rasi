@@ -1,11 +1,9 @@
 /* ---- Configuration ---- */
 configuration {
-    modi:                       "drun,run,filebrowser";
+    modi:                       "drun";
     show-icons:                 true;
     display-drun:               "  ";
-    display-run:                "  ";
-    display-filebrowser:        "  ";
-    display-window:             "  ";
+    display-window:             "  ";
     drun-display-format:        "{name}";
     hover-select:               true;
     me-select-entry:            "MouseSecondary";
@@ -33,8 +31,7 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:						800px;
-	/*height:						450px;*/
+    width:			800px;
     x-offset:                   0px;
     y-offset:                   0px;
     spacing:                    0px;
@@ -48,14 +45,14 @@ window {
     fullscreen:                 false;
     enabled:                    true;
     border-radius:              12px;
- 	background-color:           @background-color;
+    background-color:           @background-color;
 }
 
 /* ---- Mainbox ---- */
 mainbox {
     enabled:                    true;
     orientation:                vertical;
-	padding:					8px;
+    padding:			8px;
     background-image:           url("~/.config/rofi/.current_wallpaper", width);
     children:                   [ "inputbar", "listbox" ];
     border-radius:              12px;
@@ -65,7 +62,6 @@ mainbox {
 imagebox {
     background-color:           transparent;
     orientation:                vertical;
-    /*children:                   [ "inputbar"];*/
 }
 
 /* ---- Listbox ---- */
@@ -73,11 +69,11 @@ listbox {
     spacing:                    4px;
     orientation:                vertical;
     children:                   [ "message", "listview" ];
-	padding:					10px;
+    padding:			10px;
     border-radius:              12px;
     border:                     1px;
     border-color:               @active-background;
-	background-color:		    @background;
+    background-color:	        @background;
 }
 
 /* ---- Dummy ---- */
@@ -92,7 +88,7 @@ inputbar {
     spacing:                    10px;
     border-radius:              12px;
     border-color:               @foreground;
-	background-color:		    @background;
+    background-color:           @background;
     children:                   [ "mode-switcher", "textbox-prompt-colon", "entry" ];
     border:                     1px;
     border-color:               @active-background;
@@ -100,21 +96,21 @@ inputbar {
 
 textbox-prompt-colon {
     enabled:                    true;
-	padding:					10px 0px 10px 10px;
+    padding:			10px 0px 10px 10px;
     expand:                     false;
-    str:                        "🐧";
+    str: 			"󰍉 ";
     text-color:                 inherit;
-	background-color:			transparent;
+    background-color:		transparent;
 }
 
 entry {
     enabled:                    true;
-	padding:					10px 0px 10px 0px;
+    padding:			10px 0px 10px 0px;
     text-color:                 @foreground;
     cursor:                     text;
     placeholder:                "  Search";
     placeholder-color:          inherit;
-	background-color:			@background;
+    background-color:		transparent;
 }
 
 /* ---- Mode Switcher ---- */
@@ -144,31 +140,31 @@ button selected {
 
 /* ---- Listview ---- */
 listview {
-	enabled:					true;
-	columns:					2;
-	lines:						6;
-	spacing:                    5px;
-	padding:					6px;
-	dynamic:                    true;
-	cycle:                      true;
-	scrollbar:                  false;
-	layout:                     vertical;
-	reverse:                    false;
-	fixed-height:               true;
-	fixed-columns:              false;
-	background-color:           @background;
-	border-radius:   	        12px;
-	border:						0px;
+    enabled:			true;
+    columns:			2;
+    lines:			6;
+    spacing:                    5px;
+    padding:			6px;
+    dynamic:                    true;
+    cycle:                      true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              false;
+    background-color:           @background;
+    border-radius:   	        12px;
+    border:			0px;
 }
 
 /* ---- Scrollbar ---- */
 scrollbar {
-  border:						0px;
-  border-radius:				10px;
-  background-color:				transparent;
-  handle-color: 				@active;
-  handle-width: 				2px ;
-  padding:      				0;
+    border:			0px;
+    border-radius:		10px;
+    background-color:		transparent;
+    handle-color:		@active;
+    handle-width:		2px ;
+    padding:     		0;
 }
 
 /* ---- Element ---- */

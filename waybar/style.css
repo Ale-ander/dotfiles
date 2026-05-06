@@ -2,10 +2,9 @@
 
 
 * {
-	font-family: "JetBrainsMono Nerd Font";
-	font-weight: bold;
-	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-	font-size: 97%;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 98%;
     min-height: 0;
 }
 
@@ -36,19 +35,19 @@ tooltip {
 
 #taskbar button,
 #workspaces {
-	border-radius: 20px;
+    border-radius: 20px;
     background: @background;
     opacity: 1;
     padding: 0px 10px;
     margin: 0;
     margin-top: 5px;
-	border: 2px solid @color12;
+    border: 2px solid @color12;
 }
 
 #workspaces button {
     color: @color12;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding-right: 12px;
     border-radius: 9px;
     animation: gradient_f 20s ease-in infinite;
@@ -134,45 +133,46 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	border-radius: 20px;
+    border-radius: 20px;
     background: @background;
     opacity: 1;
     padding: 0px 10px;
     margin: 0;
     margin-top: 5px;
-	border: 2px solid @color13;
+    border: 2px solid @color13;
 }
 
 #power-profiles-daemon {
-	border-radius: 20px;
+    border-radius: 20px;
     background: @background;
     opacity: 1;
     padding-left:5px;
+    padding-right:4px;
     margin: 0;
     margin-top: 5px;
-	border: 2px solid @color13;
+    border: 2px solid @color13;
 }
 
 #cpu {
     border: 2px solid @background;
-	color: @background;
+    color: @background;
     background: @color12;
 }
 
 #memory {
-	color: @background;
+    color: @background;
     background: @color12;
 }
 
 #disk {
-	color: @background;
+    color: @background;
     background: @color12;
     border: 2px solid @background;
 }
 
 #memory,
 #temperature{
-	color: @background;
+    color: @background;
     background: @color12;
     border-radius: 20px;
     opacity: 1;
@@ -184,25 +184,25 @@ tooltip {
 
 #temperature.critical {
     color: red;
-	border: 2px solid red;
+    border: 2px solid red;
 }
 
 #custom-power {
     color: red;
-    padding-left: 1px;
-	padding-right: 2px;
-	border: 2px solid red;
+    padding-left: 0px;
+    padding-right: 2px;
+    border: 2px solid red;
 }
 
 #backlight {
     color: @foreground;
     padding-right: 5px;
+    padding-left: 8px;
 }
 
 #tray {
     border-radius: 20px;
     margin-right: 5px;
-/*    padding: 0px 4px; */
     padding-left: 15px;
     padding-right: 15px;
     border: 2px solid @color7;
@@ -237,7 +237,7 @@ tooltip {
 #pulseaudio {
     background-color: @color12;
     color: @background;
-	border: 2px solid @background;
+    border: 2px solid @background;
 }
 
 #pulseaudio.muted {
@@ -249,24 +249,24 @@ tooltip {
     color: #a6e3a1;
     margin-right: 5px;
     padding-right: 15px;
-	border: 2px solid @color14;
+    border: 2px solid @color14;
 }
 
 /*-----Indicators----*/
 #custom-hypridle.notactive,
 #idle_inhibitor.activated {
-	color: #39FF14;
+    color: #39FF14;
 }
 
 #battery.good {
     color: #ffd57a;
-	border: 2px solid @color15;
+    border: 2px solid @color15;
 }
 
 #battery.warning {
     color: #fab387;
     border-left: 0px;
-	border: 2px solid @color12;
+    border: 2px solid @color12;
 }
 
 #battery.charging {
@@ -276,7 +276,7 @@ tooltip {
 #battery.critical {
     color: #f38ba8;
     border-left: 0px;
-	border: 2px solid @color8;
+    border: 2px solid @color8;
 }
 
 @keyframes blink {
@@ -286,14 +286,14 @@ tooltip {
 }
 
 #battery.critical:not(.charging) {
-  background-color: red;
-  color: white;
-  animation-name: blink;
-  animation-duration: 3.0s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  box-shadow: inset 0 -3px transparent;
+    background-color: red;
+    color: white;
+    animation-name: blink;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: inset 0 -3px transparent;
 }
 
 #custom-weather {
@@ -303,23 +303,23 @@ tooltip {
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
-	min-width: 0px;
-	min-height: 0px;
-	opacity: 0;
-	background-image: none;
-	border: none;
-	box-shadow: none;
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
 }
 
 #backlight-slider trough,
 #pulseaudio-slider trough {
-	min-width: 80px;
-	min-height: 5px;
-	border-radius: 5px;
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
 }
 
 #backlight-slider highlight,
 #pulseaudio-slider highlight {
-	min-height: 10px;
-	border-radius: 5px;
+    min-height: 10px;
+    border-radius: 5px;
 }
