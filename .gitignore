@@ -43,7 +43,5 @@ wlogout/style.css
 wlogout/assets
 yad/*.css
 
-*.lua
-
 pkg/
 src/
