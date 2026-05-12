@@ -4,7 +4,7 @@
 
 ### Linux distribution
 
-Cachy-OS (April 2026)
+Cachy-OS (May 2026)
 
 ### Window manager components
 
