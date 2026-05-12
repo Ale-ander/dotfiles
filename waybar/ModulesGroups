@@ -14,6 +14,7 @@
 		"custom/file_manager",
 		"custom/tty",
 		"custom/browser",
+		"custom/hyprpicker"
 	]
 },
 "group/motherboard": {

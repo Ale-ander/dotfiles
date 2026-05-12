@@ -15,7 +15,7 @@ mainbox {
 /* ---- Entry ---- */
 entry {
   width: inherit;
-  placeholder: " 📋 Search  Clipboard ";
+  placeholder: " Search  Clipboard ";
 }
 
 /* ---- Listview ---- */

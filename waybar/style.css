@@ -121,7 +121,6 @@ tooltip {
 #custom-swaync,
 #custom-tty,
 #custom-updater,
-#custom-hyprpicker,
 #custom-weather,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
@@ -137,6 +136,17 @@ tooltip {
     background: @background;
     opacity: 1;
     padding: 0px 10px;
+    margin: 0;
+    margin-top: 5px;
+    border: 2px solid @color13;
+}
+
+#custom-hyprpicker {
+    border-radius: 20px;
+    background: @background;
+    opacity: 1;
+    padding-left: 10px;
+    padding-right: 15px;
     margin: 0;
     margin-top: 5px;
     border: 2px solid @color13;

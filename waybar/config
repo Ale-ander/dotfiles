@@ -27,7 +27,7 @@
 
 "modules-center": [
 	"custom/separator#blank",
-  	"group/app_drawer",
+	"group/app_drawer",
 	"group/notify",
 	"hyprland/workspaces#rw",
 	"clock",

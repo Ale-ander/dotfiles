@@ -176,6 +176,18 @@
 		"*": 5
 	  },
 	"format": "{icon} {windows}",
+	"format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十",
+	},
 	"format-window-separator": " ",
 	"window-rewrite-default": " ",
 	"window-rewrite": {		
@@ -201,7 +213,7 @@
 		"class<eu.betterbird.Betterbird>": " ",
 		"title<.*gmail.*>": "󰊫 ",
 
-		"class<[Tt]elegram-desktop|org.telegram.desktop|io.github.tdesktop_x64.TDesktop>": " ",
+		"class<[Tt]elegram-desktop|org.telegram.desktop|io.github.tdesktop_x64.TDesktop|.*Telegram.*>": " ",
 		"class<discord|discord-canary|[Ww]ebcord|[Vv]esktop|com.discordapp.Discord|dev.vencord.Vesktop>": " ",
 		"class<[Ss]ignal|signal-desktop|org.signal.Signal>": "󰍩 ",
 		"title<.*Signal.*>": "󰍩 ",

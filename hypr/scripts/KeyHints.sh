@@ -14,7 +14,7 @@ fi
 GDK_BACKEND=$BACKEND yad \
     --css=<(cat "$HOME/.config/yad/style.css") \
     --center \
-    --title="KooL Quick Cheat Sheet" \
+    --title="Key Bindings Cheat Sheet" \
     --no-buttons \
     --list \
     --column=Key: \
@@ -28,6 +28,7 @@ GDK_BACKEND=$BACKEND yad \
 " B" "Launch Browser" "firefox" \
 " D" "Application Launcher" "rofi" \
 " E" "Open File Manager" "pcmanfm-qt" \
+" F" "Fullscreen" "" \
 " H" "Launch this Quick Cheat Sheet" "" \
 " L" "Screen lock" "refresh weather + hyprlock" \
 " P" "Power menu" "wlogout" \
@@ -37,9 +38,10 @@ GDK_BACKEND=$BACKEND yad \
 " ALT ARROW KEY" "Swap active window" "" \
 " ALT MOUSE SCROLL" "Zoom in/out" "desktop magnifier" \
 " ALT R" "Reload Waybar swaync Rofi" "reload waybar + reload rofi" \
-" SHIFT ARROW KEY" "Resize active window" "" \
+"ALT R" "Resize active window submap" "arrow keys to rezise, esc to exit" \
+" SHIFT C" "Color picker" "hyprpicker + cliphist" \
 " SHIFT E" "Rofi Emoticons" "emoticon tab" \
-" SHIFT F" "Fullscreen" "toggles to full screen" \
+" SHIFT F" "Maximize" "" \
 " SHIFT N" "Launch Notification Panel" "swaync notification center" \
 " SHIFT P" "Open PigChat prompt" "🐖" \
 " SHIFT Q " "Kills an active window" "kill" \
