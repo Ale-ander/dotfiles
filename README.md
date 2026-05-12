@@ -38,7 +38,7 @@ Cachy-OS (May 2026)
 
 ### Fonts configuration
 
-- terminal font: ```NotoSansMono-Regular```
+- terminal font: ```JetBrainsMonoNF-Regular```
 
 ### Keys combo
 

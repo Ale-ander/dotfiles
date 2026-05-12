@@ -91,7 +91,7 @@ if hostnamectl 2>/dev/null | grep -q 'Operating System: NixOS'; then
 fi
 
 # Launch terminal and apply changes
-$terminal -e bash -c "
+$terminal --app-id sddmB -e bash -c "
 echo 'Enter your password to update SDDM wallpapers and colors';
 
 # Update the colors in the SDDM config

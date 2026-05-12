@@ -1,1 +1,2 @@
-hl.env("EDITOR", "vim")
+hl.env("EDITOR", "nvim")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")

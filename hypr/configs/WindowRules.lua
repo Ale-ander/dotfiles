@@ -16,7 +16,6 @@ hl.window_rule({ match = { class = "^(btrfs-assistant)$" }, tag = "+settings"})
 -- Rules
 hl.window_rule({ match = { tag = "multimedia_video" }, no_blur = true, opacity = 1.0 })
 hl.window_rule({ match = { tag = "multimedia" }, no_blur = true, opacity = 1.0 })
-
 hl.window_rule({ match = { tag = "cheat" }, center = true, float = true, size = {"(monitor_w*0.65)", "(monitor_h*0.8)"}})
 hl.window_rule({ match = { tag = "settings"}, center = true, float = true, size = {"(monitor_w*0.65)", "(monitor_h*0.8)"}})
 hl.window_rule({ match = { fullscreen = true}, idle_inhibit = "fullscreen" })
@@ -25,8 +24,7 @@ hl.window_rule({ match = { title = "^(Authentication Required)$"}, center = true
 hl.window_rule({ match = { title = "^(Add Folder to Workspace)$"}, center = true, float = true, size = {"(monitor_w*0.7)", "(monitor_h*0.6)"}})
 hl.window_rule({ match = { title = "^(Save As)$"}, center = true, float = true, size = {"(monitor_w*0.65)", "(monitor_h*0.8)"}})
 hl.window_rule({ match = { initial_title = "(Open Files)$"}, float = true, size = {"(monitor_w*0.7)", "(monitor_h*0.6)"}})
---no working
--- hl.window_rule({ match = { initial_title = "^(bash)$"}, center = true, float = true, size = {"(monitor_w*0.16)", "(monitor_h*0.12)"}})
+hl.window_rule({ match = { class = "^(sddmB)$"}, center = true, float = true, size = {"(monitor_w*0.4)", "(monitor_h*0.4)"}})
 hl.window_rule({ match = { class = "^(yad)$"}, center = true, float = true, size = {"(monitor_w*0.2)", "(monitor_h*0.2)"}})
 hl.window_rule({ match = { class = "^(hyprland-donate-screen)$"}, center = true, float = true})
 -- Layer rues

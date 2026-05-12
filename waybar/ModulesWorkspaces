@@ -203,13 +203,13 @@
 		"class<tor browser>": " ",
 		"class<firefox-developer-edition>": "🦊 ",
 
-		"class<kitty|konsole|[Aa]lacritty>": " ",
+		"class<kitty|konsole|[Aa]lacritty>": "  ",
 		"class<kitty-dropterm>": " ",
 		"class<com.mitchellh.ghostty>": " ",
 		"class<org.wezfurlong.wezterm>": " ",
 		"class<Warp|warp|dev.warp.Warp|warp-terminal>": "󰰭 ",
 
-		"class<[Tt]hunderbird|[Tt]hunderbird-esr>": " ",
+		"class<[Tt]hunderbird|[Tt]hunderbird-esr|org.mozilla.Thunderbird>": " ",
 		"class<eu.betterbird.Betterbird>": " ",
 		"title<.*gmail.*>": "󰊫 ",
 
@@ -257,8 +257,8 @@
 		"class<libreoffice-startcenter>": "󰏆 ",
 		"class<libreoffice-calc>": " ",
 		"title<.*nvim ~.*>": " ",
-		"title<.*vim.*>": " ",
-		"title<.*nvim.*>": " ",
+		"title<.*vim.*>": " ",
+		"title<.*nvim.*>": " ",
 		"title<.*figma.*>": " ",
 		"title<.*jira.*>": " ",
 		"class<jetbrains-idea>": " ",

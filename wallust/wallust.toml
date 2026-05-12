@@ -57,3 +57,6 @@ btop.target = "~/.config/btop/themes/wallust.theme"
 
 swaync.template = 'colors-swaync.css'
 swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
+
+nvim.template = 'colors-wal.vim'
+nvim.target = '~/.cache/wal/colors-wal.vim'

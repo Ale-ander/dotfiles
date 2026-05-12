@@ -6,7 +6,7 @@ hl.config({
 		gaps_in = 7,
 		gaps_out = 15,
 		resize_on_border = true,
-		layout = "dwindle"
+		layout = "master"
 	},
 	input = {
 		kb_layout = "it,us",
