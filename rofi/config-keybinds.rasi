@@ -1,6 +1,3 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config - For Keybinds generation */
-
 @import "~/.config/rofi/config.rasi"  
 
 
@@ -18,7 +15,7 @@ entry {
 
 /* ---- Listview ---- */
 listview {
-  columns: 2;
+  columns: 1;
   lines: 8;
   fixed-height: false;
   scrollbar: true;
@@ -27,7 +24,7 @@ listview {
 }
 
 window {
-  width: 90%;
+  width: 37%;
   height: inherit;
 }
 

@@ -1,5 +1,4 @@
 local default_apps = {
 	term = "kitty",
-	files = "pcmanft-qt"
+	files = "pcmanfm-qt"
 } return default_apps
-

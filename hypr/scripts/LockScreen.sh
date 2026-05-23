@@ -1,5 +1,0 @@
-# Ensure weather cache is up-to-date before locking (Waybar/lockscreen readers)
-bash "$HOME/.config/hypr/scripts/WeatherWrap.sh" >/dev/null 2>&1
-
-loginctl lock-session
-

@@ -31,6 +31,7 @@ GDK_BACKEND=$BACKEND yad \
 " F" "Fullscreen" "" \
 " H" "Launch this Quick Cheat Sheet" "" \
 " L" "Screen lock" "refresh weather + hyprlock" \
+" M" "Ferdium" "launch Ferium with flatpak" \
 " P" "Power menu" "wlogout" \
 " Q" "Close active window" "not kill" \
 " V" "Toggle float" "toggle float for active window" \

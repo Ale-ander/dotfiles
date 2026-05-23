@@ -28,13 +28,13 @@ palette = "dark16"
 #  2 - 10     Perceptible at a glance.
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
-threshold = 5
+threshold = 10
 
 [templates]
 cava.template = 'colors-cava'
 cava.target = '~/.config/cava/config'
 
-hypr.template = 'colors-hyprland.conf'
+hypr.template = 'colors-hyprland.lua'
 hypr.target = '~/.config/hypr/configs/wallust-hyprland.lua'
 
 rofi.template = 'colors-rofi.rasi'
@@ -42,6 +42,9 @@ rofi.target = '~/.config/rofi/wallust/colors-rofi.rasi'
 
 waybar.template = 'colors-waybar.css'
 waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
+
+wlogout.template = 'colors-hyprland.conf'
+wlogout.target = '~/.config/hypr/wallust/wallust-hyprland.conf'
 
 kitty.template = 'colors-kitty.conf'
 kitty.target = '~/.config/kitty/kitty-themes/wallust.conf'

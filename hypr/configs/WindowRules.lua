@@ -27,6 +27,7 @@ hl.window_rule({ match = { initial_title = "(Open Files)$"}, float = true, size 
 hl.window_rule({ match = { class = "^(sddmB)$"}, center = true, float = true, size = {"(monitor_w*0.4)", "(monitor_h*0.4)"}})
 hl.window_rule({ match = { class = "^(yad)$"}, center = true, float = true, size = {"(monitor_w*0.2)", "(monitor_h*0.2)"}})
 hl.window_rule({ match = { class = "^(hyprland-donate-screen)$"}, center = true, float = true})
+hl.window_rule({ match = { class = "^(flying)$" }, float = true, center = true, size = {"(monitor_w*0.7)", "(monitor_h*0.6)"}})
 -- Layer rues
 hl.layer_rule({ match = { namespace = "rofi" }, blur = true})
 hl.layer_rule({ match = { namespace = "notifications" }, blur = true})

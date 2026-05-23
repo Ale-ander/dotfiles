@@ -170,8 +170,8 @@
 	"sort-by-number": true,
 	"show-special": false,
 	"on-click": "activate",
-	"on-scroll-up": "hyprctl dispatch workspace e+1",
-	"on-scroll-down": "hyprctl dispatch workspace e-1",
+//	"on-scroll-up": "hyprctl dispatch workspace e+1",
+//	"on-scroll-down": "hyprctl dispatch workspace e-1",
 	"persistent-workspaces": {
 		"*": 5
 	  },
@@ -222,6 +222,7 @@
 		"title<.*messenger.*>": " ",
 		"title<.*facebook.*>": " ",
 		"title<.*Discord.*>": " ",
+		"title<.*Twitch.*>": " ",
 
 		"title<.*ChatGPT.*>": "󰚩 ",
 		"title<.*deepseek.*>": "󰚩 ",
