@@ -10,7 +10,7 @@ fi
 #// set file variables
 
 
-scrDir="$HOME/.config/wlogout"
+confDir="$HOME/.config"
 wlogoutStyle=1
 wlogoutStyle=${wlogoutStyle:-$WLOGOUT_STYLE}
 confDir="${confDir:-$HOME/.config}"
@@ -28,12 +28,12 @@ fi
 
 x_mon=$(hyprctl -j monitors | jq '.[] | select(.focused==true) | .width')
 y_mon=$(hyprctl -j monitors | jq '.[] | select(.focused==true) | .height')
-hypr_scale=$(hyprctl -j monitors | jq '.[] | select (.focused == true) | .scale' | sed 's/\.//')
+hypr_scale=$(hyprctl -j monitors | jq '.[] | select (.focused == true) | .scale')
 #// scale config layout and style
 
 wlColms=6
-export mgn=$((y_mon * 28 / hypr_scale))
-export hvr=$((y_mon * 23 / hypr_scale))
+export mgn=$(awk -v h="$y_mon" -v s="$hypr_scale" 'BEGIN{printf "%d", h*0.28/s}')
+export hvr=$(awk -v h="$y_mon" -v s="$hypr_scale" 'BEGIN{printf "%d", h*0.23/s}')
 
 #// scale font size
 

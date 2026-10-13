@@ -1,12 +1,14 @@
+local myLib = require("scripts.Scripts")
 local scriptsDir = ".config/hypr/scripts/"
 local mainMod = "SUPER"
 
+-- Vanilla
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("$term"), {description = "Terminal"})
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"), {description = "Browser"})
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("pkill rofi || true && rofi -show drun -modi drun,window"), {description = "App menu"})
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("$files"), {description = "File explorer"})
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({mode = "fullscreen", action = "toggle"}), {description = "Window to fullscreen"})
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(scriptsDir .. "KeyHints.sh"), {description = "Keybinds cheatsheet"})
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(scriptsDir .. "KeyHints.sh"), {description = "Helper card"})
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(scriptsDir .. "KeyBinds.sh"), {description = "Keybinds menu"})
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"), {description = "Lock screen"})
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("flatpak run org.ferdium.Ferdium"), {description = "Ferdium"})
@@ -15,47 +17,24 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close(), {description = "Close window"}
 hl.bind(mainMod .. " + V", hl.dsp.window.float({}), {description = "Float window"})
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(scriptsDir .. "WallpaperSelect.sh"), {description = "Choose wallpaper"})
 
+-- Alt
 hl.bind(mainMod .. " + ALT + left", hl.dsp.window.swap({ direction = "left" }), {description = "Swap window left"})
 hl.bind(mainMod .. " + ALT + right", hl.dsp.window.swap({ direction = "right" }), {description = "Swap window right"})
 hl.bind(mainMod .. " + ALT + up", hl.dsp.window.swap({ direction = "up" }), {description = "Swap window up"})
 hl.bind(mainMod .. " + ALT + down", hl.dsp.window.swap({ direction = "down" }), {description = "Swap window down"})
 
-function Zoom_in()
-  local current = hl.get_config("cursor.zoom_factor")
-  if current < 1 then
-    current = 1
-  end
-  hl.config({ cursor = { zoom_factor = current * 1.25 } })
-end
-
--- zooming functions
-function Zoom_out()
-  local current = hl.get_config("cursor.zoom_factor")
-  if current < 1 then
-    current = 1
-  end
-  local new_zoom = current / 1.25
-  if new_zoom < 1 then
-    new_zoom = 1.0
-  end
-  hl.config({ cursor = { zoom_factor = new_zoom } })
-end
-
-function Zoom_reset()
-  hl.config({ cursor = { zoom_factor = 1.0 } })
-end
-
+-- Zoom
 hl.bind(mainMod .. " + mouse_down", function()
-    Zoom_in()
+  myLib.Zoom_in()
 end, {description = "Zoom in"})
 hl.bind(mainMod .. " + mouse_up", function()
-    Zoom_out()
+  myLib.Zoom_out()
 end, {description = "Zoom out"})
 hl.bind(mainMod .. " + mouse:274", function()
-    Zoom_reset()
+  hl.config({ cursor = { zoom_factor = 1.0 } })
 end, {description = "Zoom reset"})
 
--- Resizing submaps
+-- Resizing submap
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd(scriptsDir .. "Refresh.sh"), {description = "Reload Waybar and Rofi"})
 
 hl.bind("ALT + R", hl.dsp.submap("resize"), {description = "Resize submap"})
@@ -68,6 +47,7 @@ hl.define_submap("resize", function()
     hl.bind("escape", hl.dsp.submap("reset"))
 end)
 
+-- Shift
 hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd("kitty --app-id flying"), {description = "Floating terminal"})
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker | wl-copy"), {description = "Hyprpicker"})
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(scriptsDir .. "RofiEmoji.sh"), {description = "Emoji menu"})
@@ -78,6 +58,7 @@ hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd(scriptsDir .. "KillActiveProc
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(scriptsDir .. "ScreenShot.sh --swappy"), {description = "Screenshot area"})
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd(scriptsDir .. "ClipManager.sh"), {description = "Clipboard manager"})
 
+-- Ctrl
 hl.bind(mainMod .. " + CTRL + up", hl.dsp.window.move({direction = "up"}), {description = "Move window up"})
 hl.bind(mainMod .. " + CTRL + down", hl.dsp.window.move({direction = "down"}), {description = "Move window down"})
 hl.bind(mainMod .. " + CTRL + left", hl.dsp.window.move({direction = "left"}), {description = "Move window left"})
@@ -89,6 +70,14 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(scriptsDir .. "KeyboardLayout.sh 
 
 hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("hyprshutdown --vt 2"), {description = "Shutdown Hyprland"})
 
+-- Function keys
+hl.bind("XF86MonBrightnessDown", function()
+  myLib.Change_brightness("dec", 5)
+end, {repeating = true, description = "Brightness up"})
+hl.bind("XF86MonBrightnessUp", function()
+  myLib.Change_brightness("inc", 5)
+end, {repeating = true, description = "Brightness down"})
+
 hl.bind("xf86AudioRaiseVolume", hl.dsp.exec_cmd(scriptsDir .. "Volume.sh --inc"), {description = "Volume up"})
 hl.bind("xf86AudioLowerVolume", hl.dsp.exec_cmd(scriptsDir .. "Volume.sh --dec"), {description = "Volue down"})
 hl.bind("xf86AudioMute", hl.dsp.exec_cmd(scriptsDir .. "Volume.sh --toggle"), {description = "Mute"})
@@ -98,6 +87,7 @@ hl.bind("xf86AudioPlay", hl.dsp.exec_cmd(scriptsDir .. "MediaCtrl.sh --pause"), 
 hl.bind("xf86AudioNext", hl.dsp.exec_cmd(scriptsDir .. "MediaCtrl.sh --nxt"), {description = "Next audio"})
 hl.bind("xf86AudioPrev", hl.dsp.exec_cmd(scriptsDir .. "MediaCtrl.sh --prv"), {description = "Previous audio"})
 
+-- Numbers
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }), {description = "Focus workspace up"})
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }), {description = "Focus workspace down"})
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }), {description = "Focus workspace left"})
@@ -125,5 +115,6 @@ hl.bind(mainMod .. " + SHIFT + 8", hl.dsp.window.move({ workspace = 8 }), {descr
 hl.bind(mainMod .. " + SHIFT + 9", hl.dsp.window.move({ workspace = 8 }), {description = "Move window to workspace 9"})
 hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = 8 }), {description = "Move window to workspace 10"})
 
+-- Mouse
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), {description = "Resize window"})
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), {description = "Drag window"})

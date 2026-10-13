@@ -63,9 +63,10 @@ color10=$(extract_color "color10")
 color12=$(extract_color "color12")
 color13=$(extract_color "color13")
 foreground=$(extract_color "foreground")
+background=$(extract_color "background")
 
 missing_colors=()
-for var in color0 color1 color7 color10 color12 color13 foreground; do
+for var in color0 color1 color7 color10 color12 color13 foreground background; do
     if [[ -z "${!var}" ]]; then
         missing_colors+=("$var")
     fi
@@ -109,6 +110,9 @@ sudo sed -i \"s/HighlightBackgroundColor=\\\"#.*\\\"/HighlightBackgroundColor=\\
 sudo sed -i \"s/LoginFieldTextColor=\\\"#.*\\\"/LoginFieldTextColor=\\\"$color12\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/PasswordFieldTextColor=\\\"#.*\\\"/PasswordFieldTextColor=\\\"$color12\\\"/\" \"$sddm_theme_conf\"
 
+sudo sed -i \"s/LoginButtonTextColor=\\\"#.*\\\"/LoginButtonTextColor=\\\"$background\\\"/\" \"$sddm_theme_conf\"
+sudo sed -i \"s/LoginButtonTimeTextColor=\\\"#.*\\\"/LoginButtonTimeTextColor=\\\"$foreground\\\"/\" \"$sddm_theme_conf\"
+
 sudo sed -i \"s/DropdownBackgroundColor=\\\"#.*\\\"/DropdownBackgroundColor=\\\"$color1\\\"/\" \"$sddm_theme_conf\"
 sudo sed -i \"s/HighlightTextColor=\\\"#.*\\\"/HighlightTextColor=\\\"$color10\\\"/\" \"$sddm_theme_conf\"
 
@@ -126,6 +130,4 @@ fi
 if [ -e \"$sddm_simple/Backgrounds/default.png\" ]; then
   sudo cp -f \"$wallpaper_path\" \"$sddm_simple/Backgrounds/default.png\"
 fi
-
-#notify-send -i \"$iDIR/ja.png\" \"SDDM\" \"Background SET\"
 "

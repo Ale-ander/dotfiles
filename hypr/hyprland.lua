@@ -11,9 +11,6 @@ require(configDir .. "StartupApps")
 require(configDir .. "ENVariables")
 
 -- Environmental variables
-require(configDir .. "Laptops")
-
--- Environmental variables
 require(configDir .. "WindowRules")
 
 -- Environmental variables
